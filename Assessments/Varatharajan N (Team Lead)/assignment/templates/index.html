@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    
+{% endblock %}
+
+{% block body %}
+<header class="header">
+    <a href="#" class="logo">CLOUD DEVLOPER</a>
+    <nav class="nav-items">
+      <a href="#" class="home">Home</a>
+      <a href="#" class="home">About</a>
+      <a href="#" class="home">Contact</a>
+      <a href="{{ url_for('login') }}" id="login" name = "login">Login</a>
+      <a href="{{ url_for('signup') }}" id="signup" name = "signup">Signup</a>
+    </nav>
+</header>
+
+<main>
+    <div class="intro">
+      <h1>CLOUD DEVLOPER</h1>
+      <p>LEARN MORE ABOUT CLOUD COMPUTING.</p>
+    </div>
+    
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About Me</h2>
+        <p>I am Cloud devloper and I love cloud devloping. I am a very cloud devloper and I want to learn more.   </p>
+      </div>
+      <img src="static/images/varatharajan.jpEg" alt="varatharajan">
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="copy">&copy; 2022 Developer</div>
+    <div class="bottom-links">
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+</footer>
+{% endblock %}
